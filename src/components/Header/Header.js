@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
-// import logo2 from "static/images/logo2.png";
+import logo from 'static/images/logo.png';
 
 const Header = () => {
   return (
     <div className="header">
         <div className="logo-section">
           <Link to="/">
-            HOME
-            {/*<img src={logo2} className="header-logo" alt="logo" />*/}
+            <img src={logo} className="header-logo" alt="logo" />
           </Link>
         </div>
         <div className="header-bar">
