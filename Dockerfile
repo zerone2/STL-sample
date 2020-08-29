@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-ADD nginx.conf /etc/nginx/nginx.conf
-ADD build /data/www
+COPY build /data/www
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
 EXPOSE 80
