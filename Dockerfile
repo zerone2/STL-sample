@@ -1,8 +1,8 @@
 
 FROM nginx:alpine
 
-COPY bulid /build
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+ADD bulid /build
+ADD nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080
 EXPOSE 80
