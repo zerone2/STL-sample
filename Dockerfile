@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-COPY build /www
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+ADD build /data/www
+ADD nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
