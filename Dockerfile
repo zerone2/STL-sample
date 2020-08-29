@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
-ADD bulid /data/www
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD build /data/www
 
 EXPOSE 8080
 EXPOSE 80
