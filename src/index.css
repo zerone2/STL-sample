@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+button {
+  cursor:pointer;
+}
+
+.start-btn {
+  margin-top: 30px;
+  background:#393d48;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:1.2rem;
+  padding:0 1em;
+  transition:800ms ease all;
+  outline:none;
+}
+.start-btn:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.start-btn:before, .start-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.start-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.start-btn:hover:before, .start-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.test-code {
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.test-code .user-input-section {
+  /*margin-right: 30px;*/
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*. pop-form, . push-form, . state-form, . size-form, . empty-form, . front-form, . back-form;*/
+}
+.test-code .user-input-section div {
+  margin-left: 20px;
+}
+.test-code .user-input-section button {
+  width: 140px;
+  height: 40px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  /*border: 0;  임시 조정*/
+  /*font-weight: bold;  임시 조정*/
+  border-radius: 10px;
+  background-color: #393d48;
+  transition:800ms ease all;
+  outline:none;
+}
+.test-code .user-input-section button:hover{
+  background:#1AAB8A;
+  color:#ffffff;
+}
+.test-code .user-input-section input {
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+  border: #e2e2e2;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 4rem;
+  color: white;
+  font-family: Cursive, serif;
+  animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+

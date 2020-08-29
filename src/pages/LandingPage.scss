@@ -1,0 +1,34 @@
+body {
+  background-color: #393d48;
+}
+.landing {
+  padding: 0;
+  margin: 0;
+
+  .main-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+      margin-top: 100px;
+      width: 350px;
+    }
+    .menu-list {
+      margin-top: 50px;
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+      font-size: 1.5rem;
+      a {
+        color: #96d6f3;
+        text-decoration: none;
+      }
+      a:hover {
+        background: #ffffff;
+        color: #1AAB8A;
+      }
+    }
+  }
+}
