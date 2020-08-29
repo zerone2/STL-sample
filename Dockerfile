@@ -1,10 +1,11 @@
+FROM ubuntu:16.04
 
-FROM nginx:alpine
-
-ADD bulid /build
+COPY build /data/www
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 ADD nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 8080
+WORKDIR /app
+
 EXPOSE 80
 
 CMD (tail -F /var/log/nginx/access.log &) && exec nginx -g "daemon off;"
