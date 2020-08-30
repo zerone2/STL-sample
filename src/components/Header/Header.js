@@ -24,10 +24,10 @@ const Header = () => {
           <div className="menu">
             menu
             <ul>
-              {/*<li><Link to="/stack">Stack</Link></li>*/}
               <li><Link to="/queue">Queue</Link></li>
-              {/*<li><Link to="/priority_queue">Priority Queue</Link></li>*/}
-              {/*<li><Link to="/hash_map">Hash Map</Link></li>*/}
+              <li><Link to="/stack">Stack</Link></li>
+              <li><Link to="/priority_queue">Priority Queue</Link></li>
+              <li><Link to="/hash_map">Hash Map</Link></li>
               {/*<li><Link to="/deque">Deque</Link></li>*/}
               {/*<li><Link to="/heap">Heap</Link></li>*/}
               {/*<li><Link to="/binary_search_tree">Binary Search Tree</Link></li>*/}

@@ -71,7 +71,7 @@ button {
   /*. pop-form, . push-form, . state-form, . size-form, . empty-form, . front-form, . back-form;*/
 }
 .test-code .user-input-section div {
-  margin-left: 20px;
+  margin: 5px 0 5px 20px;
 }
 .test-code .user-input-section button {
   width: 140px;
