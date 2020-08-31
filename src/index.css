@@ -71,11 +71,12 @@ button {
   /*. pop-form, . push-form, . state-form, . size-form, . empty-form, . front-form, . back-form;*/
 }
 .test-code .user-input-section div {
-  margin: 5px 0 5px 20px;
+  margin: 5px 0 5px;
 }
 .test-code .user-input-section button {
   width: 140px;
   height: 40px;
+  margin-left: 20px;
   font-size: 1.1rem;
   color: #ffffff;
   /*border: 0;  임시 조정*/

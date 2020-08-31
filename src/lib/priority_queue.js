@@ -6,11 +6,10 @@ const swapData = require("./swap");
  * @param {String} value - ORDER BY
  * @param {String} [value.less=default] - desc(내림차순)
  * @param {String} value.greater - asc(오름차순)
- * @example 
+ * @example
  * var pq = new priorityQueue ();
  * var pq = new priorityQueue (“less”);
  * var pq = new priorityQueue (“greater”);
- * @author ljsoo0925@gmail.com
  */
 const PriorityQueue = function (value) {
   this.data = [];                                         // array position will be starts 0
@@ -28,7 +27,7 @@ const PriorityQueue = function (value) {
  * @method priorityQueue.isEmpty
  * @description This method is used to check if this priority queue is empty.
  * @returns {Boolean} This method returns ‘true’ if this priority queue is empty or ‘false’ if this priority queue is not empty.
- * @example 
+ * @example
  * var pq = new priorityQueue ();
  * var ret1 = pq.isEmpty(); // ret1 = true
  * pq.push(1);
@@ -42,7 +41,7 @@ PriorityQueue.prototype.isEmpty = function () {
  * @method priorityQueue.size
  * @description This method is used to get the number of elements in this priority queue.
  * @returns {Number} This method returns the number of elements in this priority queue.
- * @example 
+ * @example
  * var pq = new priorityQueue ();
  * pq.push(1);
  * pq.push(2);
@@ -56,8 +55,8 @@ PriorityQueue.prototype.size = function () {
  * @method priorityQueue.top
  * @description  This method is used to check the top element in this priority queue, but does not remove.
  * @returns {value} This method returns the top element of this priority queue, or null if this priority queue is empty.
- * @throws This method returns null if the top element is empty.  
- * @example 
+ * @throws This method returns null if the top element is empty.
+ * @example
  * var pq1 = new priorityQueue ();
  * pq1.push(1);
  * pq1.push(2);
@@ -72,7 +71,7 @@ PriorityQueue.prototype.top = function () {
   if (this.count > 0) {
     return this.data[0];
   } else {
-    // alert("ERROR:priority queue is empty");  
+    // alert("ERROR:priority queue is empty");
     return null;
   }
 };
@@ -82,13 +81,13 @@ PriorityQueue.prototype.top = function () {
  * @description This method is used to insert the specified element into this priority queue.
  * @param {Undefined} value - The element to be inserted to this priority queue.
  * @throws This method returns –1 if the parameter is missing.
- * @example 
+ * @example
  * var pq1 = new priorityQueue ();
- * pq1.push(1); 
+ * pq1.push(1);
  * pq1.push(2);
- * 
+ *
  * var pq2 = new priorityQueue ();
- * pq2.push("A"); 
+ * pq2.push("A");
  * pq2.push("B");
  */
 PriorityQueue.prototype.push = function (value) {
@@ -114,14 +113,14 @@ PriorityQueue.prototype.push = function (value) {
  * @method priorityQueue.pop
  * @description This method is used to remove the highest priority element from this priority queue.
  * @throws This method returns null if this priority queue is empty.
- * @example 
+ * @example
  * var pq1 = new priorityQueue ();
- * pq1.push(1); 
+ * pq1.push(1);
  * pq1.push(2);
  * pq1.pop() // 2 will be removed.
- * 
+ *
  * var pq2 = new priorityQueue ("greater");
- * pq2.push(1); 
+ * pq2.push(1);
  * pq2.push(2);
  * pq2.pop() // 1 will be removed
  */
@@ -137,7 +136,7 @@ PriorityQueue.prototype.pop = function () {
     this.data[posOfRoot] = this.data[this.count - 1];  // remove top data && move last element to top position
     this.data.splice(--this.count, 1);
 
-    if (this.mode === "max_heap") {  // mode : less(default) 
+    if (this.mode === "max_heap") {  // mode : less(default)
       this.popMaxHeap(posOfRoot, posOfLeftChild, posOfRightChild);
     } else {                         // mode : greater
       this.popMinHeap(posOfRoot, posOfLeftChild, posOfRightChild);

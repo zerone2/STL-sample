@@ -10,7 +10,6 @@ let Entry = function (key, value) {
  * @classdesc key(키)를 해싱하여 value(값)에 매핑할 수 있는 구조로 이루어진 자료구조이다.
  * @example
  * var hm = new HashMap ();
- * @author ljsoo0925@gmail.com
  */
 const HashMap = function () {
   this.map = [];

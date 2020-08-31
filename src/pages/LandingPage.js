@@ -13,7 +13,7 @@ const LandingPage = () => {
             <Link to="/stack">Stack</Link>
             <Link to="/priority_queue">Priority Queue</Link>
             <Link to="/hash_map">Hash Map</Link>
-            {/*<Link to="/deque">Deque</Link>*/}
+            <Link to="/deque">Deque</Link>
             {/*<Link to="/heap">Heap</Link>*/}
             {/*<Link to="/binary_search_tree">Binary Search Tree</Link>*/}
             {/*<Link to="/binary_tree">Binary Tree</Link>*/}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, BrowserRouter, Link } from 'react-router-dom'
 import Header from 'components/Header'
-import { LandingPage, QueuePage, StackPage, PriorityQueuePage, HashMapPage } from 'pages'
+import { LandingPage, QueuePage, StackPage, PriorityQueuePage, HashMapPage, DequePage } from 'pages'
 import './App.css';
 
 const App = () => (
@@ -12,6 +12,7 @@ const App = () => (
     <Route path={'/stack'} component={StackPage} />
     <Route path={'/priority_queue'} component={PriorityQueuePage} />
     <Route path={'/hash_map'} component={HashMapPage} />
+    <Route path={'/deque'} component={DequePage} />
   </BrowserRouter>
 )
 
