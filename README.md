@@ -1,6 +1,6 @@
 # VISUAL-STL
 - 입문자들을 위해 자바스크립트로 만든 샘플 STL(Standard Template Library) 입니다.
-- libs 폴더안에 각각의 STL들이 정의되어 있습니다.
+- libs 폴더안에 각각의 STL들이 정의되어 있습니다. (가져다 써주세요~!~!)
 - pages, components 폴더에서는 libs에 정의되어 있는 STL들을 사용하여 사용자에게 보여줍니다.
 
 ## Dependency
