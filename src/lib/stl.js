@@ -1,8 +1,9 @@
 import Stack from './stack';
 import Queue from './queue';
-// import List from './list';
-// import PriorityQueue from './priority_queue';
-// import HashMap from './hash_map';
+import List from './list';
+import PriorityQueue from './priority_queue';
+import HashMap from './hash_map';
+import Deque from './deque';
 // import Deque from './deque';
 // import Heap from './heap';
 // import BinarySearchTree from './binary_search_tree';
@@ -11,9 +12,10 @@ import Queue from './queue';
 const stl = {
   Stack: Stack,
   Queue: Queue,
-  // List: List,
-  // PriorityQueue: PriorityQueue,
-  // HashMap: HashMap,
+  List: List,
+  PriorityQueue: PriorityQueue,
+  HashMap: HashMap,
+  Deque: Deque,
   // Deque: Deque,
   // Heap: Heap,
   // BinarySearchTree: BinarySearchTree,
